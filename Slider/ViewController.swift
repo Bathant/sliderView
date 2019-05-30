@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 //
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "bad"
+        self.title = "title"
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(viewClicked))
         clickableView.addGestureRecognizer(tap)
