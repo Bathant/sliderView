@@ -10,9 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var realTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var littleConstraint: NSLayoutConstraint!
     @IBOutlet weak var circleImage: UIImageView!
     @IBOutlet weak var arrow: UIImageView!
-    @IBOutlet weak var topConstraints: NSLayoutConstraint!
     @IBOutlet weak var secondView: UIView!
     @IBOutlet weak var firstView: UIView!
     @IBOutlet weak var clickableView: UIView!
@@ -22,12 +23,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "title"
-        
+        self.firstView.translatesAutoresizingMaskIntoConstraints = false
+        self.secondView.translatesAutoresizingMaskIntoConstraints = false
+        self.clickableView.translatesAutoresizingMaskIntoConstraints = false
         let tap = UITapGestureRecognizer(target: self, action: #selector(viewClicked))
         clickableView.addGestureRecognizer(tap)
-        constraint =  self.secondView.topAnchor.constraint(equalTo: self.firstView.topAnchor, constant: 0)
-    
-    }
+     //   topConstraints.isActive = false
+//        constraint =  self.secondView.topAnchor.constraint(equalTo: self.firstView.topAnchor, constant: 0)
+//        anotherConstraint =  self.secondView.topAnchor.constraint(equalTo: self.firstView.bottomAnchor, constant: -14)
+  //      anotherConstraint.isActive = true
+ //       view.layoutIfNeeded()
+     }
     
     @objc func viewClicked(){
   
@@ -45,7 +51,9 @@ class ViewController: UIViewController {
     }
 
     func toggleViews(hide : Bool){
-        self.constraint.isActive = hide ? false : true
+     
+        realTopConstraint.priority = UILayoutPriority(rawValue: hide ? 998 : 999)
+        littleConstraint.priority = UILayoutPriority(rawValue: hide ? 999 : 998)
         self.arrow.transform = hide ?   CGAffineTransform.identity:  CGAffineTransform(rotationAngle: CGFloat(Double.pi))
         circleImage.isHidden = hide ? false : true
         arrow.center = hide ? circleImage.center : clickableView.center

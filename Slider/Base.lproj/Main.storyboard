@@ -41,7 +41,7 @@
                                         <constraints>
                                             <constraint firstItem="atj-f5-1nW" firstAttribute="centerX" secondItem="6eZ-6j-abk" secondAttribute="centerX" id="77n-iS-qWp"/>
                                             <constraint firstItem="qq7-tR-rcB" firstAttribute="centerY" secondItem="atj-f5-1nW" secondAttribute="centerY" id="7gw-Ks-0eQ"/>
-                                            <constraint firstAttribute="height" constant="29" id="9Cp-cE-wok"/>
+                                            <constraint firstAttribute="height" priority="999" constant="29" id="9Cp-cE-wok"/>
                                             <constraint firstItem="atj-f5-1nW" firstAttribute="centerY" secondItem="6eZ-6j-abk" secondAttribute="top" id="Xm8-Wf-T6M"/>
                                             <constraint firstItem="qq7-tR-rcB" firstAttribute="centerX" secondItem="atj-f5-1nW" secondAttribute="centerX" id="h3d-3V-TQD"/>
                                         </constraints>
@@ -62,11 +62,12 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2GO-u9-Bai" secondAttribute="trailing" id="5WU-2r-o6t"/>
-                            <constraint firstItem="Lsf-Dq-KYN" firstAttribute="top" secondItem="2GO-u9-Bai" secondAttribute="bottom" constant="-14" id="LT0-bC-RnU"/>
                             <constraint firstItem="Lsf-Dq-KYN" firstAttribute="height" secondItem="2GO-u9-Bai" secondAttribute="height" id="R8e-hy-VqW"/>
+                            <constraint firstItem="Lsf-Dq-KYN" firstAttribute="top" secondItem="2GO-u9-Bai" secondAttribute="bottom" priority="999" constant="-14" id="aCJ-x6-pmK"/>
                             <constraint firstItem="2GO-u9-Bai" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aq6-fI-KTi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lsf-Dq-KYN" secondAttribute="trailing" id="f6A-lx-iHb"/>
                             <constraint firstItem="2GO-u9-Bai" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hYI-ws-DNY"/>
+                            <constraint firstItem="Lsf-Dq-KYN" firstAttribute="top" secondItem="2GO-u9-Bai" secondAttribute="top" priority="998" id="hxK-Sp-KWs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2GO-u9-Bai" secondAttribute="bottom" id="k7J-l8-w9W"/>
                             <constraint firstItem="Lsf-Dq-KYN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tLV-QP-AcG"/>
                         </constraints>
@@ -78,8 +79,9 @@
                         <outlet property="circleImage" destination="atj-f5-1nW" id="Zdj-Rb-DrC"/>
                         <outlet property="clickableView" destination="6eZ-6j-abk" id="TpP-oe-WjK"/>
                         <outlet property="firstView" destination="2GO-u9-Bai" id="bjW-ve-9tV"/>
+                        <outlet property="littleConstraint" destination="aCJ-x6-pmK" id="9hV-Rp-GB9"/>
+                        <outlet property="realTopConstraint" destination="hxK-Sp-KWs" id="qzR-S3-AFC"/>
                         <outlet property="secondView" destination="Lsf-Dq-KYN" id="cGG-cB-icq"/>
-                        <outlet property="topConstraints" destination="LT0-bC-RnU" id="nlr-UM-G8J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
