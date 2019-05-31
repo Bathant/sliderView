@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5269CB7022A17501007F40C0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5269CB6F22A17501007F40C0 /* SecondViewController.swift */; };
 		5269CB7122A17583007F40C0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5269CB6D22A172A9007F40C0 /* FirstViewController.swift */; };
+		5269CB7522A185E1007F40C0 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5269CB7422A185E1007F40C0 /* PageViewController.swift */; };
+		5269CB7722A18650007F40C0 /* PageTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5269CB7622A18650007F40C0 /* PageTwoViewController.swift */; };
 		52A8C3DA229FFEFE00F101CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8C3D9229FFEFE00F101CC /* AppDelegate.swift */; };
 		52A8C3DC229FFEFE00F101CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8C3DB229FFEFE00F101CC /* ViewController.swift */; };
 		52A8C3DF229FFEFE00F101CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A8C3DD229FFEFE00F101CC /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		5269CB6D22A172A9007F40C0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		5269CB6F22A17501007F40C0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		5269CB7422A185E1007F40C0 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		5269CB7622A18650007F40C0 /* PageTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTwoViewController.swift; sourceTree = "<group>"; };
 		52A8C3D6229FFEFE00F101CC /* Slider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A8C3D9229FFEFE00F101CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52A8C3DB229FFEFE00F101CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5269CB7222A185AB007F40C0 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				5269CB7622A18650007F40C0 /* PageTwoViewController.swift */,
+				5269CB7822A18661007F40C0 /* PageOne */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		5269CB7322A185BC007F40C0 /* PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5269CB7422A185E1007F40C0 /* PageViewController.swift */,
+			);
+			path = PageViewController;
+			sourceTree = "<group>";
+		};
+		5269CB7822A18661007F40C0 /* PageOne */ = {
+			isa = PBXGroup;
+			children = (
+				52A8C3DB229FFEFE00F101CC /* ViewController.swift */,
+				5269CB6D22A172A9007F40C0 /* FirstViewController.swift */,
+				5269CB6F22A17501007F40C0 /* SecondViewController.swift */,
+			);
+			path = PageOne;
+			sourceTree = "<group>";
+		};
 		52A8C3CD229FFEFE00F101CC = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +132,13 @@
 		52A8C3D8229FFEFE00F101CC /* Slider */ = {
 			isa = PBXGroup;
 			children = (
+				5269CB7322A185BC007F40C0 /* PageViewController */,
+				5269CB7222A185AB007F40C0 /* Pages */,
 				52A8C3D9229FFEFE00F101CC /* AppDelegate.swift */,
-				52A8C3DB229FFEFE00F101CC /* ViewController.swift */,
 				52A8C3DD229FFEFE00F101CC /* Main.storyboard */,
 				52A8C3E0229FFEFF00F101CC /* Assets.xcassets */,
 				52A8C3E2229FFEFF00F101CC /* LaunchScreen.storyboard */,
 				52A8C3E5229FFEFF00F101CC /* Info.plist */,
-				5269CB6D22A172A9007F40C0 /* FirstViewController.swift */,
-				5269CB6F22A17501007F40C0 /* SecondViewController.swift */,
 			);
 			path = Slider;
 			sourceTree = "<group>";
@@ -263,6 +293,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5269CB7122A17583007F40C0 /* FirstViewController.swift in Sources */,
+				5269CB7522A185E1007F40C0 /* PageViewController.swift in Sources */,
+				5269CB7722A18650007F40C0 /* PageTwoViewController.swift in Sources */,
 				5269CB7022A17501007F40C0 /* SecondViewController.swift in Sources */,
 				52A8C3DC229FFEFE00F101CC /* ViewController.swift in Sources */,
 				52A8C3DA229FFEFE00F101CC /* AppDelegate.swift in Sources */,

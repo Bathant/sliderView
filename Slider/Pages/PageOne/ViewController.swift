@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var clickableView: UIView!
     var constraint : NSLayoutConstraint!
     var anotherConstraint : NSLayoutConstraint!
+    var delegate : PageChangeDelegate?
     var firstVC : UIViewController  = {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: String(describing:  FirstViewController.self))
@@ -40,8 +41,11 @@ class ViewController: UIViewController {
         clickableView.addGestureRecognizer(tap)
         displayContentController(content: firstVC, parentView: firstView)
         displayContentController(content: secondVC, parentView: secondViewContainer)
-        
+        setNav()
      }
+    func setNav(){
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "wallet_ic") , style: .done, target: self, action: #selector(goToNextPage))
+    }
     
     @objc func viewClicked(){
   
@@ -67,7 +71,12 @@ class ViewController: UIViewController {
         arrow.center = hide ? circleImage.center : clickableView.center
         clickableView.backgroundColor =  hide ?  UIColor(red: 52/255, green: 116/255, blue: 189/255, alpha: 1.0) : .black
     }
-        
+    @IBAction func walletBtn(_ sender: Any) {
+     
+    }
+    @objc func goToNextPage(){
+           delegate?.goNextPage?(viewController: self.navigationController!)
+    }
     }
 
 

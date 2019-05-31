@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ygo-Wu-ez4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5DX-mg-o9G">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,18 +13,18 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Slider" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Slider" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2GO-u9-Bai">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" red="0.89411764709999997" green="0.0" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 <viewLayoutGuide key="safeArea" id="cDd-ZO-Vpf"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lsf-Dq-KYN">
-                                <rect key="frame" x="0.0" y="653" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="653" width="375" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6eZ-6j-abk">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="29"/>
@@ -47,7 +47,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3A9-qx-Q5o">
-                                        <rect key="frame" x="0.0" y="29" width="375" height="574"/>
+                                        <rect key="frame" x="0.0" y="29" width="375" height="618"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
@@ -81,7 +81,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="LAV-03-nsw"/>
                     <connections>
                         <outlet property="arrow" destination="qq7-tR-rcB" id="0RO-uj-v8l"/>
                         <outlet property="circleImage" destination="atj-f5-1nW" id="Zdj-Rb-DrC"/>
@@ -97,6 +96,31 @@
             </objects>
             <point key="canvasLocation" x="1492" y="4.9475262368815596"/>
         </scene>
+        <!--Page Two View Controller-->
+        <scene sceneID="7lF-n2-r5c">
+            <objects>
+                <viewController storyboardIdentifier="PageTwoViewController" id="aq7-Ub-RQI" customClass="PageTwoViewController" customModule="Slider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C2c-lB-wXD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kw-HV-qt2">
+                                <rect key="frame" x="134" y="276" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="click me"/>
+                                <connections>
+                                    <action selector="backBtn:" destination="aq7-Ub-RQI" eventType="touchUpInside" id="GfO-Tg-xWS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Le8-QU-P7m"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HvI-QF-cMR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2432.8000000000002" y="4.9475262368815596"/>
+        </scene>
         <!--First View Controller-->
         <scene sceneID="eNt-GF-LOS">
             <objects>
@@ -110,25 +134,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZId-A0-WeJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2160" y="-116"/>
+            <point key="canvasLocation" x="726" y="707"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="8rI-DL-d93">
+        <!--Page View Controller-->
+        <scene sceneID="0Xd-2D-7WF">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ygo-Wu-ez4" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="F9e-QW-UKh">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DxG-oy-Qi2"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Eh4-WV-Uor" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="5DX-mg-o9G" customClass="PageViewController" customModule="Slider" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cld-db-dHd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="725.60000000000002" y="4.9475262368815596"/>
+            <point key="canvasLocation" x="1310" y="-766"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="X2T-F6-zOh">
@@ -143,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZN-GW-7sZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2810" y="-116"/>
+            <point key="canvasLocation" x="1492" y="707"/>
         </scene>
     </scenes>
     <resources>
