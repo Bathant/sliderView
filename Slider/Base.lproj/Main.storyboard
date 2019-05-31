@@ -46,15 +46,23 @@
                                             <constraint firstItem="qq7-tR-rcB" firstAttribute="centerX" secondItem="atj-f5-1nW" secondAttribute="centerX" id="h3d-3V-TQD"/>
                                         </constraints>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3A9-qx-Q5o">
+                                        <rect key="frame" x="0.0" y="29" width="375" height="574"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="6eZ-6j-abk" firstAttribute="leading" secondItem="Lsf-Dq-KYN" secondAttribute="leading" id="881-LF-eN4"/>
                                     <constraint firstItem="6eZ-6j-abk" firstAttribute="top" secondItem="xLh-LZ-Vfh" secondAttribute="top" id="DgJ-bl-NiE"/>
+                                    <constraint firstItem="3A9-qx-Q5o" firstAttribute="leading" secondItem="xLh-LZ-Vfh" secondAttribute="leading" id="IDC-2g-r89"/>
                                     <constraint firstAttribute="trailing" secondItem="6eZ-6j-abk" secondAttribute="trailing" id="Ryc-O1-Tmj"/>
                                     <constraint firstItem="6eZ-6j-abk" firstAttribute="top" secondItem="xLh-LZ-Vfh" secondAttribute="top" id="UWC-Pc-DW4"/>
                                     <constraint firstItem="6eZ-6j-abk" firstAttribute="trailing" secondItem="xLh-LZ-Vfh" secondAttribute="trailing" id="WRA-K4-c0A"/>
+                                    <constraint firstItem="xLh-LZ-Vfh" firstAttribute="trailing" secondItem="3A9-qx-Q5o" secondAttribute="trailing" id="Y2d-du-QOl"/>
+                                    <constraint firstItem="3A9-qx-Q5o" firstAttribute="top" secondItem="6eZ-6j-abk" secondAttribute="bottom" id="jrb-j4-ai4"/>
                                     <constraint firstItem="6eZ-6j-abk" firstAttribute="leading" secondItem="xLh-LZ-Vfh" secondAttribute="leading" id="q4U-oh-P28"/>
+                                    <constraint firstItem="xLh-LZ-Vfh" firstAttribute="bottom" secondItem="3A9-qx-Q5o" secondAttribute="bottom" id="yhc-lE-YSI"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="xLh-LZ-Vfh"/>
                             </view>
@@ -82,11 +90,27 @@
                         <outlet property="littleConstraint" destination="aCJ-x6-pmK" id="9hV-Rp-GB9"/>
                         <outlet property="realTopConstraint" destination="hxK-Sp-KWs" id="qzR-S3-AFC"/>
                         <outlet property="secondView" destination="Lsf-Dq-KYN" id="cGG-cB-icq"/>
+                        <outlet property="secondViewContainer" destination="3A9-qx-Q5o" id="7FX-6Y-Kzt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1492" y="4.9475262368815596"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="eNt-GF-LOS">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" id="S9v-o6-kY6" customClass="FirstViewController" customModule="Slider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bHc-UV-czK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cyan="0.0012054608669131994" magenta="0.7946820855140686" yellow="0.86134868860244751" black="0.77821180555555558" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="eYW-Ly-XHL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZId-A0-WeJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2160" y="-116"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8rI-DL-d93">
@@ -105,6 +129,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eh4-WV-Uor" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="725.60000000000002" y="4.9475262368815596"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="X2T-F6-zOh">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="mb2-7m-t8B" customClass="SecondViewController" customModule="Slider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fHi-7e-HL5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.25706833600997925" green="0.2343316222649672" blue="0.017229987879772552" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="uwr-Td-A75"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hZN-GW-7sZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2810" y="-116"/>
         </scene>
     </scenes>
     <resources>

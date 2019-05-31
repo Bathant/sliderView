@@ -15,11 +15,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var circleImage: UIImageView!
     @IBOutlet weak var arrow: UIImageView!
     @IBOutlet weak var secondView: UIView!
+    @IBOutlet weak var secondViewContainer: UIView!
     @IBOutlet weak var firstView: UIView!
     @IBOutlet weak var clickableView: UIView!
     var constraint : NSLayoutConstraint!
     var anotherConstraint : NSLayoutConstraint!
-//
+    var firstVC : UIViewController  = {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: String(describing:  FirstViewController.self))
+        return vc
+    }()
+    var secondVC : UIViewController = {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: String(describing:  SecondViewController.self))
+        return vc
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "title"
@@ -28,11 +38,9 @@ class ViewController: UIViewController {
         self.clickableView.translatesAutoresizingMaskIntoConstraints = false
         let tap = UITapGestureRecognizer(target: self, action: #selector(viewClicked))
         clickableView.addGestureRecognizer(tap)
-     //   topConstraints.isActive = false
-//        constraint =  self.secondView.topAnchor.constraint(equalTo: self.firstView.topAnchor, constant: 0)
-//        anotherConstraint =  self.secondView.topAnchor.constraint(equalTo: self.firstView.bottomAnchor, constant: -14)
-  //      anotherConstraint.isActive = true
- //       view.layoutIfNeeded()
+        displayContentController(content: firstVC, parentView: firstView)
+        displayContentController(content: secondVC, parentView: secondViewContainer)
+        
      }
     
     @objc func viewClicked(){
@@ -63,5 +71,17 @@ class ViewController: UIViewController {
     }
 
 
-
+extension UIViewController {
+    func displayContentController(content: UIViewController, parentView: UIView) {
+        addChild(content)
+        parentView.addSubview(content.view)
+        content.didMove(toParent: self)
+    }
+    func hideContentController(content: UIViewController) {
+        content.willMove(toParent: nil)
+        content.view.removeFromSuperview()
+        content.removeFromParent()
+    }
+    
+}
 

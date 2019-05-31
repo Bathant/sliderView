@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5269CB7022A17501007F40C0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5269CB6F22A17501007F40C0 /* SecondViewController.swift */; };
+		5269CB7122A17583007F40C0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5269CB6D22A172A9007F40C0 /* FirstViewController.swift */; };
 		52A8C3DA229FFEFE00F101CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8C3D9229FFEFE00F101CC /* AppDelegate.swift */; };
 		52A8C3DC229FFEFE00F101CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8C3DB229FFEFE00F101CC /* ViewController.swift */; };
 		52A8C3DF229FFEFE00F101CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A8C3DD229FFEFE00F101CC /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5269CB6D22A172A9007F40C0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		5269CB6F22A17501007F40C0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		52A8C3D6229FFEFE00F101CC /* Slider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A8C3D9229FFEFE00F101CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52A8C3DB229FFEFE00F101CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 				52A8C3E0229FFEFF00F101CC /* Assets.xcassets */,
 				52A8C3E2229FFEFF00F101CC /* LaunchScreen.storyboard */,
 				52A8C3E5229FFEFF00F101CC /* Info.plist */,
+				5269CB6D22A172A9007F40C0 /* FirstViewController.swift */,
+				5269CB6F22A17501007F40C0 /* SecondViewController.swift */,
 			);
 			path = Slider;
 			sourceTree = "<group>";
@@ -256,6 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5269CB7122A17583007F40C0 /* FirstViewController.swift in Sources */,
+				5269CB7022A17501007F40C0 /* SecondViewController.swift in Sources */,
 				52A8C3DC229FFEFE00F101CC /* ViewController.swift in Sources */,
 				52A8C3DA229FFEFE00F101CC /* AppDelegate.swift in Sources */,
 			);
